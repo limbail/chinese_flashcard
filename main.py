@@ -41,7 +41,7 @@ with st.sidebar: # sidebar looks better
     
     hanzi=df['hanzi'].item()
     pinyin=df['pinyin'].item()
-    user_lang=df[user_lang].item()
+    user_lang_translation=df[user_lang].item()
     #spanish=df['spanish'].item()
 
     #st.write('You selected:', user_lang)
@@ -63,7 +63,7 @@ def generate_new():
     with st.empty():
         time.sleep(show_answer_time)
         
-        st.write('English: {}'.format(user_lang))
+        st.write('{}: {}'.format(user_lang, user_lang_translation))
 
 # the lonely button:
 st.button("Next", key="1", on_click=generate_new())
