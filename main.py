@@ -17,7 +17,7 @@ with st.sidebar: # sidebar looks better
     ['HSK-1', 'HSK-2', 'HSK-3', 'HSK-4', 'HSK-5', 'HSK-6'],)
 
     #st.write('You selected:', options)
-    if options == 'HSK-1':level='hsk1'
+    if options == 'HSK-1':level='hsk1' 
     if options == 'HSK-2':level='hsk2'
     if options == 'HSK-3':level='hsk3'
     if options == 'HSK-4':level='hsk4'
